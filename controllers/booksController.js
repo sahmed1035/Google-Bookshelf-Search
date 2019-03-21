@@ -1,3 +1,5 @@
+//5. make controllers. each api should have its own controller
+
 const db = require("../models");
 
 // Defining methods for the booksController

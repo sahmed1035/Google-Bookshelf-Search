@@ -1,3 +1,5 @@
+//1. 
+
 import React, { Component } from "react";
 import DeleteBtn from "../components/DeleteBtn";
 import Jumbotron from "../components/Jumbotron";
@@ -20,7 +22,7 @@ class Books extends Component {
   }
 
   loadBooks = () => {
-    API.getBooks()
+    API.getBooks() // 1. all the get methods under client utils API. Initiates the request. Go to API
       .then(res =>
         this.setState({ books: res.data, title: "", author: "", synopsis: "" })
       )
